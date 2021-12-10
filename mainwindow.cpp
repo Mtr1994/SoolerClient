@@ -47,7 +47,7 @@ void MainWindow::init()
 void MainWindow::slot_file_send()
 {
    // mTcpPackClient.sendFile("E:\\document\\Video\\demo3.txt");
-    mTcpPackClient.sendFile("E:\\document\\Video\\demo7.mp4");
+    mTcpPackClient.sendFile("E:\\document\\Video\\demo4.mp4");
   //  mTcpPackClient.sendFile("E:\\document\\Video\\demo4.mp4");
 }
 
@@ -60,7 +60,7 @@ void MainWindow::slot_command_send()
 
 void MainWindow::slot_file_upload_process(const QString &filename, float process)
 {
-    if (filename == "demo7.mp4")
+    if (filename == "demo7.mp4" || filename == "demo4.mp4")
     {
         ui->progressBar->setValue(process);
         ui->progressBar->setFormat(QString("%1 %").arg(QString::number(process, 'f', 2)));

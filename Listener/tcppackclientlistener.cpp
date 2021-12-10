@@ -57,8 +57,6 @@ EnHandleResult TcpPackClientListener::OnReceive(ITcpClient *pSender, CONNID dwCo
         return HR_OK;
     }
 
-    qDebug() << message.cmd();
-
     // 赋值解析后的消息体
     switch (message.cmd())
     {
